@@ -78,3 +78,5 @@ E:\Desktop\MagicVilla_API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System
 E:\Desktop\MagicVilla_API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 E:\Desktop\MagicVilla_API\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\Desktop\MagicVilla_API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\Desktop\MagicVilla_API\bin\Debug\net7.0\AutoMapper.dll
+E:\Desktop\MagicVilla_API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
