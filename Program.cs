@@ -1,5 +1,7 @@
 using MagicVilla_API;
 using MagicVilla_API.Datos;
+using MagicVilla_API.Repositorio;
+using MagicVilla_API.Repositorio.IRepositorio;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +22,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 
 //Agregamos servicios de AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingConfig));
+
+//LA INTERFAZ Y SU IMPLEMENTACIÓN DEBEN SER AGREGADAS COMO SERVICIO PARA PODER SER INYECTADAS EN EL CONTROLADOR
+builder.Services.AddScoped<IVillaRepositorio,VillaRepositorio>(); //=> Los servicios AddScoped se crean mediante una solicitud y luego una vez utilizado se destruye
+
+builder.Services.AddScoped<INumeroVillaRepositorio, NumeroVillaRepositorio>();
 
 var app = builder.Build();
 

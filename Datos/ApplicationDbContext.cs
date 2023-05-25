@@ -9,8 +9,9 @@ namespace MagicVilla_API.Datos
         {
 
         }
-        //Indicamos el modelo a crear
+        //Indicamos el modelo a crear, esto creada una tabla en la BD
         public DbSet<Villa> Villas { get; set; }
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
 
         //Sobreescribimos método para insertar datos en la BD, en vez de insertarlos por medio de SQL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
